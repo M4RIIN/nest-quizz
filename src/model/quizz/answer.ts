@@ -14,4 +14,8 @@ export class Answer{
     isCorrectAnswer(){
         return this.isCorrect;
     }
+
+    getText(){
+        return this.text;
+    }
 }

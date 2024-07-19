@@ -14,4 +14,12 @@ export class Question{
         }
         this.answers = answers;
     }
+
+    getText(){
+        return this.question;
+    }
+
+    getAnswer(){
+        return this.answers;
+    }
 }
