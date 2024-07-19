@@ -4,6 +4,7 @@ import { INestApplication } from '@nestjs/common';
 
 async function bootstrap() {
   const app: INestApplication = await NestFactory.create(AppModule);
-  await app.listen(3000);
+  const port = process.env.PORT || 3000;
+  await app.listen(port);
 }
 bootstrap();
